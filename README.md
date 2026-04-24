@@ -1,5 +1,14 @@
+<!-- 🇰🇷 한국어 사용자: README.ko.md (요약) + docs/ko/ (전체 한글 문서) 참조 -->
+
 <p align="center">
   <img src="doc/assets/header.png" alt="Paperclip — runs your business" width="720" />
+</p>
+
+<p align="center">
+  <strong>🇰🇷 Korean fork:</strong>
+  <a href="README.ko.md">한글 README</a> ·
+  <a href="docs/ko/AGENTS.md">한글 AGENTS</a> ·
+  <a href="docs/ko/KOREANIZATION-PLAN.md">한글화 로드맵</a>
 </p>
 
 <p align="center">

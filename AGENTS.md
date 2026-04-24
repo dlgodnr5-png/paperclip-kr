@@ -1,5 +1,10 @@
 # AGENTS.md
 
+> 🇰🇷 **Korean fork**: 한글 요약본은 [`docs/ko/AGENTS.md`](docs/ko/AGENTS.md). 한글화 로드맵은 [`docs/ko/KOREANIZATION-PLAN.md`](docs/ko/KOREANIZATION-PLAN.md).
+>
+> 이 fork(`paperclip-kr`)는 박사님 무기고(`d:/Naver MYBOX/06 main/program-main/`)와 통합 운영됩니다.
+> 보안/저널/승계 규칙은 무기고 `CLAUDE.md`의 0순위/1순위 규칙을 따릅니다.
+
 Guidance for human and AI contributors working in this repository.
 
 ## 1. Purpose
