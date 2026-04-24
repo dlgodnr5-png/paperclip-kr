@@ -39,6 +39,11 @@
     "documents": "Documents",
     "settings": "Settings"
   },
+  "dashboard_extras": {
+    "recent_activity": "Recent Activity",
+    "recent_tasks": "Recent Tasks",
+    "no_tasks": "No tasks yet."
+  },
   "dashboard": {
     "title": "Dashboard",
     "subtitle": "AI agent company status",
@@ -127,5 +132,33 @@
     "label": "Korean Fork",
     "intro": "This is paperclip-kr (Korean fork)",
     "upstream": "Upstream: paperclipai/paperclip"
+  },
+  "onboarding": {
+    "tabs": {
+      "company": "Company",
+      "agent": "Agent",
+      "task": "Task",
+      "launch": "Launch"
+    },
+    "step1": {
+      "heading": "Name your company",
+      "subheading": "This is the organization your agents will work for.",
+      "company_name_label": "Company name",
+      "company_name_placeholder": "Acme Corp",
+      "mission_label": "Mission / goal (optional)",
+      "mission_placeholder": "What is this company trying to achieve?"
+    },
+    "step2": {
+      "heading": "Create your first agent",
+      "subheading": "The AI agent that will perform tasks."
+    },
+    "step3": {
+      "heading": "Register your first task",
+      "subheading": "Concrete work to assign to your agent."
+    },
+    "step4": {
+      "heading": "Ready to launch",
+      "subheading": "Review your setup and start."
+    }
   }
 }

@@ -39,6 +39,11 @@
     "documents": "문서",
     "settings": "설정"
   },
+  "dashboard_extras": {
+    "recent_activity": "최근 활동",
+    "recent_tasks": "최근 작업",
+    "no_tasks": "아직 작업 없음"
+  },
   "dashboard": {
     "title": "대시보드",
     "subtitle": "AI 에이전트 회사 현황",
@@ -127,5 +132,33 @@
     "label": "한글 포크",
     "intro": "이 화면은 paperclip-kr (한글 포크) 입니다",
     "upstream": "업스트림: paperclipai/paperclip"
+  },
+  "onboarding": {
+    "tabs": {
+      "company": "회사",
+      "agent": "사령관",
+      "task": "첫 작업",
+      "launch": "출격"
+    },
+    "step1": {
+      "heading": "회사 이름을 지으세요",
+      "subheading": "사령관들이 일할 조직입니다.",
+      "company_name_label": "회사명",
+      "company_name_placeholder": "예: 박사님 에이전시",
+      "mission_label": "미션 / 목표 (선택)",
+      "mission_placeholder": "이 회사가 달성하려는 바는?"
+    },
+    "step2": {
+      "heading": "첫 사령관을 고용하세요",
+      "subheading": "작업을 수행할 AI 에이전트입니다."
+    },
+    "step3": {
+      "heading": "첫 작업을 등록하세요",
+      "subheading": "사령관에게 맡길 구체 업무."
+    },
+    "step4": {
+      "heading": "출격 준비 완료",
+      "subheading": "설정을 확인하고 시작하세요."
+    }
   }
 }
