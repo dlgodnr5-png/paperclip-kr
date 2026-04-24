@@ -1,0 +1,131 @@
+{
+  "common": {
+    "loading": "불러오는 중...",
+    "saving": "저장 중...",
+    "save": "저장",
+    "cancel": "취소",
+    "delete": "삭제",
+    "edit": "편집",
+    "create": "만들기",
+    "close": "닫기",
+    "confirm": "확인",
+    "yes": "예",
+    "no": "아니오",
+    "back": "뒤로",
+    "next": "다음",
+    "submit": "제출",
+    "search": "검색",
+    "filter": "필터",
+    "refresh": "새로 고침",
+    "more": "더 보기",
+    "less": "접기",
+    "settings": "설정",
+    "help": "도움말",
+    "logout": "로그아웃"
+  },
+  "language": {
+    "label": "언어",
+    "ko": "한국어",
+    "en": "English"
+  },
+  "nav": {
+    "dashboard": "대시보드",
+    "issues": "이슈",
+    "agents": "에이전트",
+    "companies": "회사",
+    "budgets": "예산",
+    "activity": "활동 로그",
+    "skills": "스킬",
+    "documents": "문서",
+    "settings": "설정"
+  },
+  "dashboard": {
+    "title": "대시보드",
+    "subtitle": "AI 에이전트 회사 현황",
+    "metrics": {
+      "active_agents": "활성 에이전트",
+      "open_issues": "오픈 이슈",
+      "completed_today": "오늘 완료",
+      "budget_used": "사용 예산",
+      "budget_remaining": "남은 예산"
+    },
+    "latest_run": "최근 실행",
+    "no_data": "표시할 데이터가 없습니다"
+  },
+  "company": {
+    "title": "회사",
+    "select": "회사 선택",
+    "create": "회사 만들기",
+    "switch": "회사 전환",
+    "settings": "회사 설정",
+    "members": "구성원",
+    "delete_confirm": "정말 이 회사를 삭제하시겠습니까? 되돌릴 수 없습니다."
+  },
+  "issue": {
+    "create": "이슈 만들기",
+    "checkout": "이슈 체크아웃",
+    "complete": "완료 처리",
+    "reopen": "다시 열기",
+    "assignee": "담당자",
+    "status": {
+      "open": "오픈",
+      "in_progress": "진행 중",
+      "done": "완료",
+      "blocked": "차단됨",
+      "cancelled": "취소"
+    }
+  },
+  "agent": {
+    "title": "에이전트",
+    "register": "에이전트 등록",
+    "type": {
+      "claude_local": "Claude 로컬",
+      "codex_local": "Codex 로컬",
+      "cursor_local": "Cursor 로컬",
+      "gemini_local": "Gemini 로컬",
+      "openclaw_gateway": "OpenClaw 게이트웨이",
+      "opencode_local": "OpenCode 로컬",
+      "pi_local": "Pi 로컬",
+      "hermes_local": "Hermes 로컬"
+    },
+    "status": {
+      "idle": "대기 중",
+      "working": "작업 중",
+      "blocked": "차단됨",
+      "offline": "오프라인",
+      "error": "오류"
+    }
+  },
+  "budget": {
+    "title": "예산",
+    "limit": "한도",
+    "used": "사용액",
+    "remaining": "잔액",
+    "exceeded": "예산 초과 — 자동 일시정지됨",
+    "monthly": "월 한도",
+    "daily": "일 한도"
+  },
+  "approval": {
+    "required": "승인 필요",
+    "pending": "응답 대기 중",
+    "approved": "승인됨",
+    "denied": "거부됨",
+    "approve": "승인",
+    "deny": "거부",
+    "deny_reason": "거부 사유"
+  },
+  "error": {
+    "generic": "오류가 발생했습니다",
+    "network": "네트워크 연결을 확인하세요",
+    "unauthorized": "권한이 없습니다",
+    "not_found": "찾을 수 없습니다",
+    "validation": "입력값을 확인하세요",
+    "server": "서버 오류 — 잠시 후 다시 시도",
+    "frozen": "🚨 보안 게이트가 동결되었습니다. 박사님 승인 전까지 작업 불가."
+  },
+  "fork": {
+    "label": "한글 포크",
+    "intro": "이 화면은 paperclip-kr (한글 포크) 입니다",
+    "upstream": "업스트림: paperclipai/paperclip"
+  }
+}

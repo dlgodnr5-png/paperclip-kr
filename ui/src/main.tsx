@@ -19,6 +19,8 @@ import { initPluginBridge } from "./plugins/bridge-init";
 import { PluginLauncherProvider } from "./plugins/launchers";
 import "@mdxeditor/editor/style.css";
 import "./index.css";
+// 🇰🇷 paperclip-kr: i18next 초기화 (사이드 이펙트, 한 번만)
+import "./i18n";
 
 initPluginBridge(React, ReactDOM);
 

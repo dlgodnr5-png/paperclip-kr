@@ -12,12 +12,12 @@
 | 단계 | 상태 | 내용 |
 |------|------|------|
 | D0 | ✅ 완료 | (`program-main`) CoC + Security Gate 기반 |
-| **D1** | 🔄 **진행 중** | Fork + clone + 초벌 번역 |
-| D2 | ⏸️ 대기 | i18next UI 한글화 |
-| D3 | ⏸️ 대기 | 무기고 어댑터 (arsenal-claude-code.ts) |
-| D4 | ⏸️ 대기 | telegram_sender + 외출 모드 통합 |
-| D5 | ⏸️ 대기 | 승계 체인 (succession-chain.ts) |
-| D6 | ⏸️ 대기 | e2e + docs/ko 완성 + v0.1.0-ko 릴리스 |
+| D1 | ✅ 완료 | Fork + clone + 초벌 번역 (README.ko, AGENTS.ko, KOREANIZATION-PLAN) |
+| **D2** | 🔄 **인프라 완료** | i18next 설치 + locale + LanguageToggle + 사용 가이드 ([`I18N-USAGE.md`](I18N-USAGE.md)) |
+| D3 | ⏸️ 대기 | 무기고 어댑터 (arsenal-claude-code.ts) + 첫 UI wrap (OnboardingWizard) |
+| D4 | ⏸️ 대기 | telegram_sender + 외출 모드 통합 + 핵심 운영 화면 wrap |
+| D5 | ⏸️ 대기 | 승계 체인 (succession-chain.ts) + 설정/모달 wrap |
+| D6 | ⏸️ 대기 | e2e + 잔여 wrap + 자동 sync 스크립트 + v0.1.0-ko 릴리스 |
 
 ---
 
@@ -133,22 +133,26 @@ git push origin ko
 
 ## ✅ 각 D 완료 조건 (Definition of Done)
 
-**D1 (현재)**:
+**D1 (✅ 완료, 커밋 b2473805)**:
 - [x] Fork 생성 (`dlgodnr5-png/paperclip-kr`)
 - [x] 로컬 clone + `ko` 브랜치 + upstream 연결
 - [x] `README.ko.md` 한글 요약
 - [x] `docs/ko/AGENTS.md` 한글 요약
 - [x] `docs/ko/KOREANIZATION-PLAN.md` (이 문서)
-- [ ] `AGENTS.md` 원본에 "paperclip-kr fork 섹션" 추가
-- [ ] `README.md` 상단에 한글 README 링크 추가
-- [ ] `ko` 브랜치 초기 커밋 + 푸시
-- [ ] 무기고 저널 + 텔레그램 알림
+- [x] `AGENTS.md` 원본에 fork 섹션 안내
+- [x] `README.md` 상단에 한글 README 링크
+- [x] `ko` 브랜치 초기 커밋 + 푸시
+- [x] 무기고 저널 + 텔레그램 알림
 
-**D2**:
-- [ ] `i18next` + `react-i18next` 설치
-- [ ] UI 주요 문자열 `t()` 래핑 (최소 온보딩 + 대시보드 상단)
-- [ ] `locale/ko.json` 초기 번들 (100+ 키)
-- [ ] 언어 토글 UI
+**D2 (✅ 인프라 완료)**:
+- [x] `i18next` + `react-i18next` + `i18next-browser-languagedetector` 의존성 추가 (`ui/package.json`)
+- [x] `ui/src/i18n/index.ts` 초기화 (자동 감지 + localStorage 저장)
+- [x] `ui/src/i18n/locale/ko.json` + `en.json` (12 섹션, 100+ 키)
+- [x] `ui/src/components/LanguageToggle.tsx` (inline + dropdown 변형)
+- [x] `ui/src/main.tsx`에 `import "./i18n"` 추가
+- [x] [`I18N-USAGE.md`](I18N-USAGE.md) 개발자 가이드
+- [ ] `pnpm install` 실행 (사용자 작업 — NTFS 30~60s 이슈로 자동화 보류)
+- [ ] 실제 UI 컴포넌트 t() wrap (D3에서 OnboardingWizard부터 점진)
 
 **D3~D6**: 상세는 상위 플랜 참조.
 

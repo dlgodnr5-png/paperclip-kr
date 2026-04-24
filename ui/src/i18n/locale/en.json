@@ -1,0 +1,131 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "saving": "Saving...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "close": "Close",
+    "confirm": "Confirm",
+    "yes": "Yes",
+    "no": "No",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "search": "Search",
+    "filter": "Filter",
+    "refresh": "Refresh",
+    "more": "More",
+    "less": "Less",
+    "settings": "Settings",
+    "help": "Help",
+    "logout": "Log out"
+  },
+  "language": {
+    "label": "Language",
+    "ko": "한국어",
+    "en": "English"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "issues": "Issues",
+    "agents": "Agents",
+    "companies": "Companies",
+    "budgets": "Budgets",
+    "activity": "Activity Log",
+    "skills": "Skills",
+    "documents": "Documents",
+    "settings": "Settings"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "AI agent company status",
+    "metrics": {
+      "active_agents": "Active Agents",
+      "open_issues": "Open Issues",
+      "completed_today": "Completed Today",
+      "budget_used": "Budget Used",
+      "budget_remaining": "Budget Remaining"
+    },
+    "latest_run": "Latest Run",
+    "no_data": "No data to display"
+  },
+  "company": {
+    "title": "Company",
+    "select": "Select Company",
+    "create": "Create Company",
+    "switch": "Switch Company",
+    "settings": "Company Settings",
+    "members": "Members",
+    "delete_confirm": "Really delete this company? This cannot be undone."
+  },
+  "issue": {
+    "create": "Create Issue",
+    "checkout": "Checkout Issue",
+    "complete": "Mark Complete",
+    "reopen": "Reopen",
+    "assignee": "Assignee",
+    "status": {
+      "open": "Open",
+      "in_progress": "In Progress",
+      "done": "Done",
+      "blocked": "Blocked",
+      "cancelled": "Cancelled"
+    }
+  },
+  "agent": {
+    "title": "Agent",
+    "register": "Register Agent",
+    "type": {
+      "claude_local": "Claude Local",
+      "codex_local": "Codex Local",
+      "cursor_local": "Cursor Local",
+      "gemini_local": "Gemini Local",
+      "openclaw_gateway": "OpenClaw Gateway",
+      "opencode_local": "OpenCode Local",
+      "pi_local": "Pi Local",
+      "hermes_local": "Hermes Local"
+    },
+    "status": {
+      "idle": "Idle",
+      "working": "Working",
+      "blocked": "Blocked",
+      "offline": "Offline",
+      "error": "Error"
+    }
+  },
+  "budget": {
+    "title": "Budget",
+    "limit": "Limit",
+    "used": "Used",
+    "remaining": "Remaining",
+    "exceeded": "Budget exceeded — auto-paused",
+    "monthly": "Monthly limit",
+    "daily": "Daily limit"
+  },
+  "approval": {
+    "required": "Approval required",
+    "pending": "Awaiting response",
+    "approved": "Approved",
+    "denied": "Denied",
+    "approve": "Approve",
+    "deny": "Deny",
+    "deny_reason": "Denial reason"
+  },
+  "error": {
+    "generic": "An error occurred",
+    "network": "Check your network connection",
+    "unauthorized": "Unauthorized",
+    "not_found": "Not found",
+    "validation": "Check your inputs",
+    "server": "Server error — try again later",
+    "frozen": "🚨 Security gate is frozen. Cannot proceed without doctor's approval."
+  },
+  "fork": {
+    "label": "Korean Fork",
+    "intro": "This is paperclip-kr (Korean fork)",
+    "upstream": "Upstream: paperclipai/paperclip"
+  }
+}
