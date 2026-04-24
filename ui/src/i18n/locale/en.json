@@ -160,5 +160,59 @@
       "heading": "Ready to launch",
       "subheading": "Review your setup and start."
     }
+  },
+  "agents_page": {
+    "title": "Agents",
+    "tabs": {
+      "all": "All",
+      "active": "Active",
+      "paused": "Paused",
+      "error": "Error"
+    },
+    "filters": {
+      "label": "Filters",
+      "show_terminated": "Show terminated"
+    },
+    "actions": {
+      "new_agent": "New Agent"
+    },
+    "empty": {
+      "message": "Create your first agent to get started.",
+      "no_match": "No agents match the selected filter.",
+      "no_org_hierarchy": "No organizational hierarchy defined."
+    }
+  },
+  "issues_page": {
+    "title": "Issues",
+    "empty": {
+      "select_company": "Select a company to view issues.",
+      "no_match": "No issues match the current filters or search."
+    },
+    "search_placeholder": "Search issues...",
+    "tooltips": {
+      "sort": "Sort",
+      "group": "Group"
+    }
+  },
+  "settings_page": {
+    "title": "Company Settings",
+    "breadcrumb": {
+      "company": "Company",
+      "settings": "Settings"
+    },
+    "sections": {
+      "general": "General",
+      "appearance": "Appearance",
+      "environments": "Environments",
+      "hiring": "Hiring",
+      "danger_zone": "Danger Zone"
+    },
+    "general": {
+      "company_name_label": "Company name",
+      "description_label": "Description"
+    },
+    "actions": {
+      "save_changes": "Save changes"
+    }
   }
 }
