@@ -7,17 +7,26 @@
 
 ---
 
-## 📊 진행 현황 (2026-04-24)
+## 📊 진행 현황 (2026-04-24, D6 진입)
 
 | 단계 | 상태 | 내용 |
 |------|------|------|
 | D0 | ✅ 완료 | (`program-main`) CoC + Security Gate 기반 |
 | D1 | ✅ 완료 | Fork + clone + 초벌 번역 (README.ko, AGENTS.ko, KOREANIZATION-PLAN) |
-| **D2** | 🔄 **인프라 완료** | i18next 설치 + locale + LanguageToggle + 사용 가이드 ([`I18N-USAGE.md`](I18N-USAGE.md)) |
-| D3 | ⏸️ 대기 | 무기고 어댑터 (arsenal-claude-code.ts) + 첫 UI wrap (OnboardingWizard) |
-| D4 | ⏸️ 대기 | telegram_sender + 외출 모드 통합 + 핵심 운영 화면 wrap |
-| D5 | ⏸️ 대기 | 승계 체인 (succession-chain.ts) + 설정/모달 wrap |
-| D6 | ⏸️ 대기 | e2e + 잔여 wrap + 자동 sync 스크립트 + v0.1.0-ko 릴리스 |
+| D2 | ✅ 완료 | i18next 인프라 + locale + LanguageToggle ([`I18N-USAGE.md`](I18N-USAGE.md)) |
+| D2.5 | ✅ 완료 | NTFS 이슈 → `C:/dev/paperclip-kr/` 로 clone 이동 |
+| D3 | ✅ 완료 | **원안 폐기** — 어댑터 신설 대신 `program-main/tools/paperclip_bridge/` 외부 sync. `agent.adapterConfig.paperclipRuntimeSkills` 에 무기고 스킬 주입. **paperclip-kr 본체 수정 zero** |
+| D3.5 | ✅ 완료 | 이중 리뷰 (Explore+Plan) → C1/C2/M1~M6/DRIFT-3 10건 수정. 96 entries (번들 4 + 무기고 92), 백슬래시 0, 이식성 OK |
+| D4 | ✅ 완료 | Paperclip 에 outgoing webhook 없음 → WebSocket `/api/companies/<id>/events/ws` 구독으로 교체. event_listener + telegram_bridge + outing 모듈 |
+| D4.6 | ✅ 완료 | PC 사령관 봇 복구 + watchdog 구축 (`pc_bot_alive.py`) |
+| D5 | ✅ 완료 | 승계 체인 1~5위 Python (`succession.py`) — adapterType + model PATCH 전환 |
+| D5.5 | ✅ 완료 | 자동화 3종 — `health.py` + `auto_demote.py` + `telegram_queue.py`. update_monitor 30분 cron 4-hook 통합 |
+| **D6** | 🔄 **진행 중** | docs/ko 3종 (이 문서, `GETTING-STARTED`, `CONTINUITY-OF-COMMAND`, `MIGRATION-FROM-OUTING`) + `v0.1.0-ko` 릴리스 |
+
+**보류 (별도 트랙)**:
+- D6 실 e2e 장애 시뮬 — paperclip dev 재기동 불안정 (node/pnpm 잔해 누적). 깨끗한 세션에서 별도.
+- 6위 Ollama — Paperclip adapter 부재, `process` 어댑터 래퍼 방식 별도 설계.
+- API provider 장애 자동 복귀 — 비용 증가 가능성으로 박사님 승인 방식 유지.
 
 ---
 
