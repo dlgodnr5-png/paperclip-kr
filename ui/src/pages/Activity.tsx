@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
+import { useTranslation } from "react-i18next";
 import type { ActivityEvent, Agent } from "@paperclipai/shared";
 import { activityApi } from "../api/activity";
 import { accessApi } from "../api/access";
@@ -44,12 +45,13 @@ function activityEntityTitle(event: ActivityEvent) {
 }
 
 export function Activity() {
+  const { t } = useTranslation();
   const { selectedCompanyId } = useCompany();
   const { setBreadcrumbs } = useBreadcrumbs();
   const [filter, setFilter] = useState("all");
 
   useEffect(() => {
-    setBreadcrumbs([{ label: "Activity" }]);
+    setBreadcrumbs([{ label: t("nav.activity") }]);
   }, [setBreadcrumbs]);
 
   const { data, isLoading, error } = useQuery({

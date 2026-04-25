@@ -223,6 +223,7 @@ function IssueSearchInput({
   value: string;
   onDebouncedChange?: (search: string) => void;
 }) {
+  const { t } = useTranslation();
   const [draftValue, setDraftValue] = useState(value);
   const lastCommittedValueRef = useRef(value);
 
@@ -269,9 +270,9 @@ function IssueSearchInput({
             e.currentTarget.blur();
           }
         }}
-        placeholder="Search issues..."
+        placeholder={t("issues_page.search_placeholder")}
         className="pl-7 text-xs sm:text-sm"
-        aria-label="Search issues"
+        aria-label={t("issues_page.search_placeholder")}
         data-page-search-target="true"
       />
     </div>

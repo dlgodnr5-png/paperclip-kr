@@ -37,7 +37,15 @@
     "activity": "Activity Log",
     "skills": "Skills",
     "documents": "Documents",
-    "settings": "Settings"
+    "settings": "Settings",
+    "goals": "Goals",
+    "approvals": "Approvals",
+    "costs": "Costs",
+    "inbox": "Inbox"
+  },
+  "costs_page": {
+    "title": "Costs",
+    "active_incidents": "Active incidents"
   },
   "dashboard_extras": {
     "recent_activity": "Recent Activity",

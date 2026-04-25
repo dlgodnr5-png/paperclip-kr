@@ -37,7 +37,15 @@
     "activity": "활동 로그",
     "skills": "스킬",
     "documents": "문서",
-    "settings": "설정"
+    "settings": "설정",
+    "goals": "목표",
+    "approvals": "승인 대기",
+    "costs": "비용",
+    "inbox": "받은 알림"
+  },
+  "costs_page": {
+    "title": "비용",
+    "active_incidents": "활성 인시던트"
   },
   "dashboard_extras": {
     "recent_activity": "최근 활동",
